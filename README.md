@@ -32,12 +32,8 @@ The notebooks have been scrubbed of all output before usage, however if you'd li
 1. Deploying Your Working Environment [See Below]
 1. Validating and Importing User-Item-Interaction Data - 
 `Validating_and_Importing_User_Item_Interaction_Data.ipynb`
-1. Validating and Importing Item-Metadata [In Development] - 
-`Validating_and_Importing_Item_Metadata.ipynb`
 1. Creating and Evaluating Your First Solutions - 
 `Deploying_Campaigns_and_Interacting.ipynb`
-1. Importing Item / User metadata [In Development]
-1. Creating and Evaluating Related Metadata Solutions [In Development]
 1. Next Steps 
 
 That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you at least import the user-item-interaction data before arriving in person.
