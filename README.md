@@ -106,11 +106,6 @@ Open `Validating_and_Importing_User_Item_Interaction_Data.ipynb` and follow alon
 
 Once you have completed this, you can move onto creating and evaluating your first solutions.
 
-## Validating and Importing Item Metadata [IN Development]
-
-Amazon Personalize has several algorithms that can give you a result with no metadata. However the HRNN-Metadata Algorithm might be an interestesting resource to deploy given your dataset. In case it is there is an optional item metadata notebook below. It is similar to the process for users and the only algorithm that supports either data type is HRNN-Metadata.
-
-Open `Validating_and_Importing_Item_Metadata.ipynb` and follow along there to prepare the dataset for the POC/Amazon Personalize.
 
 ## Creating and Evaluating Your First Solutions
 
@@ -132,9 +127,6 @@ Once you have a series of trained solutions the next step is to deploy them, tha
 1. Real-Time interactions
 1. Batch exporting ( and why )
 
-### Importing Item / User Metadata [In Development]
-
-### Creating and Evaluating Related Metadata Solutions [In Development]
 
 ### Next Steps
 
