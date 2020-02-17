@@ -22,7 +22,7 @@ By the end of this POC progress you should have picked up the following skills:
 ### Audience
 Data Scientists, Data Engineers who have experience in EDA & Model Development in Python using Jupyter Notebooks. 
 
-###Prerequisites: 
+### Prerequisites: 
 -	The workshop below is a (Level 300) deep dive designed to help you build out your first models for your given use case.
 -	Bring your own AWS account: The workshop will be based on sample scenarios and will be run at each participant’s own AWS account. Please make you have sufficient permissions for the services (Personalize, SageMaker, S3, IAM)
 
@@ -31,33 +31,51 @@ Data Scientists, Data Engineers who have experience in EDA & Model Development i
 1.	We recommend reading the article below to have a basic understanding of collaborative filtering algorithms, and challenges of recommendation systems: 
 Smith, Brent , Greg Linden, Two Decades of Recommender Systems at Amazon.com https://pdfs.semanticscholar.org/0f06/d328f6deb44e5e67408e0c16a8c7356330d1.pdf
 1.	If you are not familiar with Amazon Personalize you can familiarize yourself about it:
-Product Page - GitHub Sample Notebooks - Product Docs
+If you are not familiar with Amazon Personalize you can learn more about this tool on these pages:
+  -  [Product Page](https://aws.amazon.com/personalize/)
+  -  [GitHub Sample Notebooks](https://github.com/aws-samples/amazon-personalize-samples)
+  - [Product Docs](https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html)
 1.	Share a brief info with us per mail about the dataset and the use case you plan to implement. Note: We will use a public dataset to deliver the workshop. However, we’d like to organize followup PoC’s to assist customers with a use case . 
 
 This repository assumes a base familiarity with the service and if you have not already done so it is recommended that you use the getting-started material below.
 
-## Introduction to Amazon Personalize
+# Workshop Agenda
+- Business Overview
+  - Opportunities & Challenges to Personalization
+  - Personalize Unique benefits: Cold Starts, Real-Time  
+- Recommendation Systems before Amazon Personalize
+- Rule Based Systems, Custom ML Models with Factorization Machines, Support Vector Dimension, Deep Learning (HRNN)
+- Lab Module 1: Defining your data (Datasets, Schemas, Exploration, Ingestion)
+- Major Use Cases for Amazon Personalize
+  - User personalization (We think you might like …)
+  - Similar Items (People who bought these bought these)
+  - Personalized Ranking (Recommended for you in … category)
+- Lab Module 2: Creating a Solution
+- Algorithms Supported
+  - AutoML, DeepFM, FFNN, HRNN, Popularity Baseline, Search Personalization, SIMS
+- Major Challenges of Recommendation Systems (Defining related items, feedback loops, Time dimension, Diversity
+- Enriching Dataset with User & Item Metadata
+- Lab Module 3: Evaluating Solutions
+  - Rank-aware metrics (beyond traditional  ML metrics of accuracy and decision support)
+  - Further tuning your model with Hyper Param Optimization: Selected Hyperparameters
+- Lab Module 4: Deploying a Campaign & Interacting
+  - Serverless Inference Endpoint
+  - SIMS, HRNN & Personalized Ranking
+  - Real-Time & Batch Interaction with the Campaign
+- Customer Case Studies
+- Summary & Identification of Next Steps
 
-If you are not familiar with Amazon Personalize you can learn more about this tool on these pages:
-
-* [Product Page](https://aws.amazon.com/personalize/)
-* [GitHub Sample Notebooks](https://github.com/aws-samples/amazon-personalize-samples)
-* [Product Docs](https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html)
-
-## Completed Example
-
-The notebooks have been scrubbed of all output before usage, however if you'd like to see a fully worked out example of this process, explore the notebooks in the `completed` folder.
-
-## Process:
+# Hands-on Lab Modules
 
 1. Deploying Your Working Environment [See Below]
-1. Validating and Importing User-Item-Interaction Data - 
+1. Module 1: Validating and Importing User-Item-Interaction Data - 
 `Validating_and_Importing_User_Item_Interaction_Data.ipynb`
-1. Creating and Evaluating Your First Solutions - 
+1. Module 2: Creating and Evaluating  Solutions - 
+`Creating_and_Evaluating_Solutions.ipynb`
+1. Module 3: Deploying Campaigns and Interacting (Real-time and Batch) - 
 `Deploying_Campaigns_and_Interacting.ipynb`
-1. Next Steps 
+1. Module 4: [Optional] Advanced Example using HRNN-Metadata Recipe
 
-That is a genereal order to this proccess, however if you are operating this as an assisted 2 day on-site POC. It is recommended that you at least import the user-item-interaction data before arriving in person.
 
 
 ## Deploying Your Working Environment
