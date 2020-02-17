@@ -168,12 +168,10 @@ Once you have a series of trained solutions the next step is to deploy them, tha
 
 ## Cleaning up Resources
 
-Once you have completed all of the work in the Notebooks and have completed the cleanup steps there as well, the last thing to do is to delete the stack you created with CloudFormation. To do that, inside the AWS Console again click the `Services` link at the top, and this time enter in `CloudFormation` and click the link for it.
+Once you have completed all of the work in the Notebooks and have completed the cleanup steps there as well, the last thing to do is to delete the stack you created with CloudFormation. To do that, inside the AWS Console again click the `Services` link at the top, and this time enter in `CloudFormation` and click the link for it. Click the `Delete` button on the demo stack you created. You'll now notice that the stack is in progress of being deleted. Once you see `Delete Completed` you know that everything has been deleted and you are 100% done with this lab.
 
-Click the `Delete` button on the demo stack you created. You'll now notice that the stack is in progress of being deleted. Once you see `Delete Completed` you know that everything has been deleted and you are 100% done with this lab.
+You will need to delete all campaigns, solutions, datasets, event trackers and dataset groups manually. This will be fixed in the next version.
 
 ### Next Steps
 
-This should have left you with a series of working models for your customer, from here you will look to leverage how they accomplish AB testing today against their goals ( coversions, clicks, etc) and then start sending traffic to these models and monitoring those metrics. Over time this should build confidence and will be your path to production at scale.
-
-More content on AB testing coming soon as well.
+Identify your use case and data sources, and start testing Amazon Personalize. Contact your AWS team for PoC/pilot support. 
