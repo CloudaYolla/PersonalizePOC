@@ -127,7 +127,7 @@ Once you have a series of trained solutions the next step is to deploy them, tha
 1. Real-Time interactions
 1. Batch exporting ( and why )
 
-## After the Notebooks
+## Cleaning up Resources
 
 Once you have completed all of the work in the Notebooks and have completed the cleanup steps there as well, the last thing to do is to delete the stack you created with CloudFormation. To do that, inside the AWS Console again click the `Services` link at the top, and this time enter in `CloudFormation` and click the link for it.
 
