@@ -1,6 +1,38 @@
-# Personalize POC Guide
+# Amazon Personalize  - A Deep Dive Hands-on Workshop tailored for Data Scientists
 
-Amazon Personalize is a machine learning service that allows you to build and scale recommendation/personalization models in a quick and effective manner. The content below is designed to help you build out your first models for your given use case and makes assumptions that your data may not yet be in an ideal format for Amazon Personalize to use.
+###  Amazon Personalize
+Matching users to items that they may like sounds like a simple problem. However, the task of developing an efficient recommender system is challenging. Years ago, Netflix even ran a movie recommendation competition with a $1 Million award! 
+
+Indeed, building, optimizing and deploying real-time personalization today requires specialized expertise in analytics, applied machine learning, software engineering, and systems operations. Few organizations have the knowledge, skills, and experience to overcome these challenges, and they either abandon the idea of using recommendation or build under-performing models.
+
+For over 20 years, Amazon.com has built recommender systems at scale, integrating personalized recommendations across the buying experience – from product discovery to checkout.
+To help all AWS customers do the same, we announced Amazon Personalize two years ago, a fully-managed service that puts personalization and recommendation in the hands of developers with little machine learning experience.
+
+Personalization offers business benefits such as up to 15% increase in engagement, up to 80% increase on product discovery of tail items and up to 30% increase in conversion. Amazon Personalize is a machine learning service that allows you to build and scale recommendation/personalization models in a quick and effective manner. It is based on the same technology used at Amazon.com
+
+
+### Objectives
+By the end of this POC progress you should have picked up the following skills:
+- How to map input dataset to Amazon Personalize.
+- Which models or recipes are appropriate for which use cases.
+-	To interpret model metrics.
+-	To deploy models in a programatic fashion.
+-	To obtain results from Personalize
+
+### Audience
+Data Scientists, Data Engineers who have experience in EDA & Model Development in Python using Jupyter Notebooks. 
+
+###Prerequisites: 
+-	The workshop below is a (Level 300) deep dive designed to help you build out your first models for your given use case.
+-	Bring your own AWS account: The workshop will be based on sample scenarios and will be run at each participant’s own AWS account. Please make you have sufficient permissions for the services (Personalize, SageMaker, S3, IAM)
+
+### Preparation
+
+1.	We recommend reading the article below to have a basic understanding of collaborative filtering algorithms, and challenges of recommendation systems: 
+Smith, Brent , Greg Linden, Two Decades of Recommender Systems at Amazon.com https://pdfs.semanticscholar.org/0f06/d328f6deb44e5e67408e0c16a8c7356330d1.pdf
+1.	If you are not familiar with Amazon Personalize you can familiarize yourself about it:
+Product Page - GitHub Sample Notebooks - Product Docs
+1.	Share a brief info with us per mail about the dataset and the use case you plan to implement. Note: We will use a public dataset to deliver the workshop. However, we’d like to organize followup PoC’s to assist customers with a use case . 
 
 This repository assumes a base familiarity with the service and if you have not already done so it is recommended that you use the getting-started material below.
 
@@ -11,17 +43,6 @@ If you are not familiar with Amazon Personalize you can learn more about this to
 * [Product Page](https://aws.amazon.com/personalize/)
 * [GitHub Sample Notebooks](https://github.com/aws-samples/amazon-personalize-samples)
 * [Product Docs](https://docs.aws.amazon.com/personalize/latest/dg/what-is-personalize.html)
-
-## Goals 
-
-By the end of this POC progress you should have picked up the follwoing skills:
-
-1. How to map datasets to Amazon Personalize.
-1. Which models or recipes are appropriate for which use cases.
-1. How to build models in a programatic fashion.
-1. To interpret model metrics.
-1. To deploy models in a programatic fashion.
-1. To obtain results from Personalize
 
 ## Completed Example
 
