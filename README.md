@@ -129,9 +129,8 @@ From the SageMaker console scroll until you see the green box indicating now man
 
 ![StackWizard5](static/imgs/img8.png)
 
-On this page you will see a list of any SageMaker notebooks you have running, simply click the `Open JupyterLab` link on the Personalize POC notebook you have created
+On this page you will see a list of any SageMaker notebooks you have running, simply click the `Open Jupyter` link on the Personalize POC notebook you have created
 
-![StackWizard5](static/imgs/img9.png)
 
 This will open the Jupyter environment for your POC, think of it as a web based data science IDE if you are not familiar with it. It should Automatically open the `PersonalizePOC` folder for you, but if it does not do that by clicking on the folder icon in the browser on the left side of the screen and follow the documentation below to get started with your POC!
 
@@ -168,10 +167,23 @@ Once you have a series of trained solutions the next step is to deploy them, tha
 
 ## Cleaning up Resources
 
-Once you have completed all of the work in the Notebooks and have completed the cleanup steps there as well, the last thing to do is to delete the stack you created with CloudFormation. To do that, inside the AWS Console again click the `Services` link at the top, and this time enter in `CloudFormation` and click the link for it. Click the `Delete` button on the demo stack you created. You'll now notice that the stack is in progress of being deleted. Once you see `Delete Completed` you know that everything has been deleted and you are 100% done with this lab.
+### Step 1: Make sure you execute the cleanup steps at the end of Module 3 Notebook
+It deletes campaigns, solutions, event trackers, datasets and dataset groups. Check from the AWS Personalize console, that all are deleted. If not, delete each from the console. 
 
-You will need to delete all campaigns, solutions, datasets, event trackers and dataset groups manually. This will be fixed in the next version.
+The IAM role for Amazon personalize created inside the Module 1 is not deleted from the notebook, nor from the CloudFormation, because it is also reused for optional Module 4. Delete it from IAM Console -> Roles after finishing Module 4. 
 
+### Step 2: Delete CloudFormation Stack (for Modules 1,2 and 3)
+Once you have completed all of the work in the Notebooks and have completed the cleanup steps there as well, the last thing to do is to delete the stack you created with CloudFormation. To do that, inside the AWS Console again click the `Services` link at the top, and this time enter in `CloudFormation` and click the link for it. Click the `Delete` button on the demo stack you created. You'll now notice that the stack is in progress of being deleted. Once you see `Delete Completed` you know that everything has been deleted and you are 100% done with this lab. 
+
+**Important Note:** This action deletes the SageMaker notebook. Make sure you download your data (notebook code etc.) before deletion (if you modified the default notebook). 
+
+
+### Step 3: [Optional] Make sure you execute the cleanup steps at the end of Module 4 Notebook
+If you did Module 4, do this step as well. It deletes campaigns, solutions, event trackers, datasets and dataset groups. Check from the AWS Personalize console, that all are deleted. If not, delete each from the console. 
+
+The IAM role for Amazon personalize created inside the Module 1 is not deleted from the notebook, nor from the CloudFormation, because it is also reused for optional Module 4. Delete it from IAM Console -> Roles after finishing Module 4. 
+
+ 
 ### Next Steps
 
 Identify your use case and data sources, and start testing Amazon Personalize. Contact your AWS team for PoC/pilot support. 
